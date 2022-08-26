@@ -4,7 +4,7 @@ const NewPage= () => {
 
     return (
         <>
-        <h2 className={classes.header}>I'm New Page </h2>
+        <h2 className={classes.header}>I'm here because cartIsShown is TRUE </h2>
        
         </>
 
