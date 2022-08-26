@@ -36,14 +36,14 @@ const Review = () => {
 
   return (
     <article>
-      <img src={image} alt={data[index].name} height="150" width="150" />
+      <img src={image} alt={name} height="150" width="150" />
 
       <h4>{name}</h4>
       <h3>{job}</h3>
       <p>{text}</p>
       <div>
         <button onClick={prevPerson}>Prev</button>
-        <button>{index}</button>
+        <button>Index Number is :{index}    |     Data Length is : {data.length }</button>
         <button onClick={nextPerson}>Next</button>
       </div>
     </article>
