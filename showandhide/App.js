@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Header from './Header';
 import NewPage from './NewPage';
 
 
@@ -16,8 +15,9 @@ const App = () => {
   
   return (
     <>
+    <button  onClick={showCartHandler}    > Open </button>
+    <button  onClick={hideCartHandler}    > Close </button>
     
-    <Header onShowCart={showCartHandler} onClose={hideCartHandler} />
     {cartIsShown && <NewPage/>}
     </>
   );
