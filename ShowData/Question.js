@@ -7,7 +7,7 @@ const Question = ({ id, title, info }) => {
     <article>
       <h4>{title}</h4>{" "}
       <button onClick={() => setShowInfo(!showInfo)}>
-        {showInfo ? "-" : "+"}
+        {showInfo ? "TRUE" : "FALSE"}
       </button>
       {showInfo && <h6>{info}</h6>}
     </article>
