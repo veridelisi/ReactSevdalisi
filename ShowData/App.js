@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import data from "./data";
-import SingleQuestion from "./Question";
+import Question from "./Question";
 
 function App() {
   //Import data to the usestate
@@ -8,9 +8,9 @@ function App() {
 
   return (
     <main>
-      {questions.map((question) => {
-        return <SingleQuestion key={question.id} {...question} />;
-      })}
+      {questions.map((question) => (
+        <Question key={question.id} {...question} />
+      ))}
     </main>
   );
 }
