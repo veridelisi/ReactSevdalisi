@@ -15,6 +15,7 @@ const App = () => {
   
   return (
     <>
+    <p>cartIsShown  is FALSE , when you click open button, cartIsShown will TRUE</p>
     <button  onClick={showCartHandler}    > Open </button>
     <button  onClick={hideCartHandler}    > Close </button>
     
