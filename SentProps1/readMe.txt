@@ -15,22 +15,25 @@ data is created in data.js, importing in App.js, sending to List.js
 3).
 We create useState (    const [datas, setDatas] = useState(data);  )
 Importing data is converting useState object as datas
-We sent this state object to List.js as props   ( <List info={datas} />     )
+We sent this state object to List.js as props  
+but
+We use map function in the here and sent "item" as props
+
+{datas.map((item)=> (
+        <List key={item.id} {...item}></List>
+      ))}
+
 
 4).
-In the List.js takes this props and converts to takenData      (    const takenData= props.info;   )
+In the List.js takes this props' parts directly in props location between brackets 
 
-
-List.js seperates takenData with map function and We can see each parts of every item in database.
-
-{takenData.map((item)=> (
-      <>
-      <h1>{item.id}</h1>
-      <h2>{item.age}</h2>
-      <h3>{item.name}</h3>
-      <h4>-----------------</h4>
-      </>
-    )  
-    
+   const List = ({ id, name, age, image })
+   
+   and we use directly as follows
+        <p>{id}</p>
+        <p>{name}</p>
+        <p>{age}</p>
+        
+        
     
     Doç.Dr.Engin YILMAZ
