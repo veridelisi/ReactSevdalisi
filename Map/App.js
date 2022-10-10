@@ -5,7 +5,7 @@ import jokesData from "./jokesData";
 export default function App() {
 console.log(jokesData)
   const jokeElements = jokesData.map((joke) => {
-    return <Joke info={joke.setup} info2={joke.punchline} />;
+    return <Joke setup={joke.setup} punchline={joke.punchline} />;
   });
 
 
