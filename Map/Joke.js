@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Joke({ info, info2}) {
+export default function Joke({ punchline, setup}) {
   return (
     <>
-      {info && <h3>{info}</h3>}
-      {info2 && <h5>{info2}</h5>}
+      {setup && <h3>{setup}</h3>}
+      {punchline && <h5>{punchline}</h5>}
       <hr />
     </>
   );
