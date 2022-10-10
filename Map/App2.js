@@ -8,7 +8,7 @@ export default function App() {
   return (
     <>
       {jokesData.map((index) => {
-        return <Joke info={index.setup} info2={index.punchline} />;
+        return <Joke setup={index.setup} punchline={index.punchline} />;
       })}
     </>
   );
