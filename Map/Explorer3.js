@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Explorer({index}) {
+export default function Explorer3({index}) {
   return (
     <>
       <h3>{index.ad}</h3>
