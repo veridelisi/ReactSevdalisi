@@ -2,7 +2,7 @@ import React from "react"
 
 // public/images/twitter.png
 
-export default function Explorer4({index}) {
+export default function Explorer51({index}) {
     return (
         <div>
             <h3>Ad: {index.ad}</h3>
