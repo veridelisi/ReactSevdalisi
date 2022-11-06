@@ -1,18 +1,18 @@
 export default [
   {
-    setup: "Engin",
-    punchline: "40",
+    ad: "Engin",
+    yas: "40",
     picture: "twitter.png"
   },
 
   {
-    setup: "Emre",
-    punchline: "30",
+     ad: "Emre",
+    yas: "30",
     picture: "twitter.png"
   },
   {
-    setup: "Su",
-    punchline: "4",
+    ad: "Su",
+    yas: "4",
     picture: "twitter.png"
   },
 ];
