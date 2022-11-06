@@ -1,13 +1,12 @@
 import React from "react";
-import jokesData from "./jokesData";
-import Joke from "./Joke";
+import Explorer from "./Explorer";
+import Data from "./Data";
 
 export default function App() {
 
-  const jokeElements = jokesData.map((joke) => {
-    return <Joke setup={joke.setup} punchline={joke.punchline} />;
+const Veriler = Data.map((index) => {
+    return <Explorer ad={index.ad} yas={index.yas} />;
   });
 
-
-  return <>{jokeElements}</>;
+  return <>{Veriler}</>;
 }
