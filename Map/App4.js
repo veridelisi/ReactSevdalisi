@@ -1,15 +1,13 @@
 import React from "react";
-import Joke from "./Joke";
-import jokesData from "./jokesData";
+import Explorer from "./Explorer";
+import Data from "./Data";
 
-export default function App() {
-  console.log(jokesData);
+export default function App4() {
 
-  return (
-    <>
-      {jokesData.map((index) => {
-        return <Joke index={index} />;
-      })}
-    </>
-  );
+  const Veriler = Data.map((index) => {
+    return <Explorer index={index}/>;
+  });
+
+
+  return <>{Veriler}</>;
 }
