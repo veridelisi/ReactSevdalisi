@@ -3,7 +3,7 @@ import Joke from "./Joke";
 import jokesData from "./jokesData";
 
 export default function App() {
-  console.log(jokesData);
+
 
   return (
     <>
